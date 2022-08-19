@@ -1,0 +1,1 @@
+export * from '../pages/wall-display/wall-display.component';
