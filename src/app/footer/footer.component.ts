@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  aboutData = ['About Us', 'Privacy Policy', 'Shipping', 'Gift Card', 'Sitemap'];
 
   constructor() { }
 

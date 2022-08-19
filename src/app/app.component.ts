@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Canvas Champ';
+
+  constructor(@Inject(DOCUMENT) document: Document) { }
+
+  // @HostListener('window:scroll', ['$event'])
+  // onWindowScroll() {
+  //    if (window.pageYOffset > 550) {
+  //      let element = document.getElementById('app-header') as HTMLElement;
+  //      element.classList.add('sticky');
+  //    } else {
+  //     let element = document.getElementById('app-header') as HTMLElement;
+  //       element.classList.remove('sticky'); 
+  //    }
+  // }
 }

@@ -1,3 +1,17 @@
 <div class="footer-container">
-<div class="copyright-label">&#169; 2022 CanvasChamp. All Rights Reserved.</div>
+    <div>
+        <mat-accordion class="example-headers-align" multi>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  About
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <div *ngFor="let value of aboutData">{{value}}</div>
+            </mat-expansion-panel>
+            </mat-accordion>
+    </div>
+    <div class="copyright-label">&#169; 2022 CanvasChamp. All Rights Reserved.</div>
 </div>
