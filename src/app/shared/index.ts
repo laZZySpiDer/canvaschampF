@@ -1,0 +1,1 @@
+export * from '../shared/product-card/product-card.component';
