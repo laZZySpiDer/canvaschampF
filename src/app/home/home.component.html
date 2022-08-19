@@ -1,0 +1,28 @@
+<div class="home-main-container">
+    <div class="hero-section">
+        <div class="carousel-container">
+            <swiper [pagination]="true" [navigation]="true" [autoplay]="{
+                delay: 2500,
+                disableOnInteraction: false
+              }" class="home-page-swiper">
+                <ng-template *ngFor="let singleImage of imageList;" swiperSlide>
+                    <img src="{{ singleImage }}" alt="">
+                </ng-template>
+            </swiper>
+        </div>
+        <div class="product-order-container">
+            Product Order Container
+        </div>
+    </div>
+
+    <div class="features-content">
+        <div class="heading-main">
+            The Innovative Canvas Difference
+        </div>
+        <div class="content">
+            You can trust your precious memories to the experts at Innovative Canvas. 
+            We use only the very best materials and offer quality products at an affordable price. 
+            We guarantee it!
+        </div>
+    </div>
+</div>

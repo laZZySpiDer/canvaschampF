@@ -1,4 +1,6 @@
 .footer-container {
+  flex-shrink: 0;
+  flex-grow: 0;
   .copyright-label {
     border-top: 1px solid gray;
     padding: 10px;
