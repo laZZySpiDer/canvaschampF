@@ -4,6 +4,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SwiperModule } from 'swiper/angular';
 import { WallDisplayComponent } from './pages/wall-display/wall-display.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { WallDisplayComponent } from './pages/wall-display/wall-display.componen
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SwiperModule
+    SwiperModule,
+    SharedModule
   ]
 })
 export class HomeModule { }
