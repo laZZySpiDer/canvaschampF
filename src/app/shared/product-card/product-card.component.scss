@@ -1,0 +1,62 @@
+section {
+  margin: 30px;
+
+  .card-product-details {
+    text-align: center;
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: CircularStd_Black, Helvetica, Arial, sans-serif;
+      margin-bottom: 5px;
+    }
+  }
+
+  .strike {
+    color: #666 !important;
+    margin-right: 8px;
+    font-size: 16px !important;
+    font-style: italic;
+    text-decoration: line-through;
+  }
+  .cprice {
+    color: #bf1e2e;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .hz-separator {
+    color: #666;
+  }
+
+  .button-style {
+    margin-top: 10px;
+    .btn {
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: 400;
+      text-align: center;
+      line-height: 20px;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      text-transform: uppercase;
+      background-color: #ddd;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      padding: 10px 20px;
+      border-radius: 3px;
+    }
+    .btn-primary {
+      color: #fff;
+      background-color: #bf1e2e;
+      border-color: #bf1e2e;
+      font-size: 11px;
+      white-space: normal;
+      padding: 8px 10px;
+    }
+  }
+}
