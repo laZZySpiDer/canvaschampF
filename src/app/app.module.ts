@@ -8,15 +8,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MaterialModule } from 'src/core/material.module';
-import { HomePageComponent } from './home-page/home-page.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-    HomePageComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
