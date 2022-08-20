@@ -11,7 +11,17 @@ export class HeaderComponent implements OnInit, OnDestroy {
   offerTwo = 'UP TO 93% OFF CANVAS PRINTS + BUY 2 GET 1 FREE SITEWIDE! (CODE: B2G1) SHIPS IN 24 HRS!';
 
   mobileQuery: MediaQueryList;
-  fillerNav = Array.from({ length: 50 }, (_, i) => `Nav Item ${i + 1}`);
+  // fillerNav = Array.from({ length: 9 }, (_, i) => `Nav Item ${i + 1}`);
+  fillerNav = [
+    {
+      name : 'Home',
+      link : ''
+    },
+    {
+      name : 'Canvas Wall Display',
+      link : '/wall-display'
+    }
+  ];
 
   fillerContent = Array.from(
     {length: 10},
