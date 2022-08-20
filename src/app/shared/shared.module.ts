@@ -10,6 +10,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[ProductCardComponent]
 })
 export class SharedModule { }

@@ -9,8 +9,6 @@ import { FooterComponent } from './footer/footer.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MaterialModule } from 'src/core/material.module';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
