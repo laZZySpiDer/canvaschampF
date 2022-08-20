@@ -7,7 +7,7 @@ import { Component, HostListener, Inject } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Canvas Champ';
+  title = 'Innovative Canvas';
 
   constructor(@Inject(DOCUMENT) document: Document) { }
 
