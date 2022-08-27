@@ -11,7 +11,7 @@
   }
 
   .offer-bg-color {
-    background-color: #bf1e2e;
+    background-color: var(--first-color);
     color: white;
   }
 
@@ -19,7 +19,7 @@
     color: white;
   }
   .font-color-red{
-    color: #bf1e2e;
+    color: var(--first-color);
     text-decoration: none;
   }
 
@@ -40,9 +40,9 @@
     z-index: 2;
   }
 
-  .example-is-mobile {
+  // .example-is-mobile {
     
-  }
+  // }
 
   .justify-space-between{
     display: flex;
