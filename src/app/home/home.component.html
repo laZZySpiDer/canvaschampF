@@ -16,13 +16,36 @@
     </div>
 
     <div class="features-content">
-        <div class="heading-main">
-            The Innovative Canvas Difference
+        
+        <div class="single-characteristic">
+            <div class="heading-main">
+                The Innovative Canvas Difference
+            </div>
+            <div class="content">
+                You can trust your precious memories to the experts at Innovative Canvas. 
+                We use only the very best materials and offer quality products at an affordable price. 
+                We guarantee it!
+            </div>
         </div>
-        <div class="content">
-            You can trust your precious memories to the experts at Innovative Canvas. 
-            We use only the very best materials and offer quality products at an affordable price. 
-            We guarantee it!
+
+
+       <hr class="custom-divider">
+
+
+        <div class="single-characteristic" *ngFor="let characteristic of characteristicList">
+            <mat-icon class="characteristic-icon"> {{characteristic.icon}}</mat-icon>
+            <div class="sub-heading">
+                {{characteristic.heading}}
+            </div>
+            <div class="content">
+               {{characteristic.content}}
+            </div>
         </div>
+
+
+
+
+
+
     </div>
 </div>

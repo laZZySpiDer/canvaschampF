@@ -7,12 +7,16 @@ import { WallDisplayComponent } from './pages/wall-display/wall-display.componen
 import { SharedModule } from '../shared/shared.module';
 import { CartComponent } from './pages/cart/cart.component';
 import { MaterialModule } from 'src/core/material.module';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     WallDisplayComponent,
-    CartComponent
+    CartComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     CommonModule,
