@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MaterialModule } from 'src/core/material.module';
+import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,12 @@ import { MaterialModule } from 'src/core/material.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatNativeDateModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule,
+    ToastrModule.forRoot({
+      timeOut: 5000,
+      preventDuplicates: true,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

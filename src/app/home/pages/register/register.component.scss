@@ -1,0 +1,36 @@
+.register-main-container{
+    width: 100%;
+    margin-top: 2em;
+    .heading-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin-top: 1em;
+            margin-bottom: 1em;
+            width: 100%;
+            height: 210px;
+        }
+    }
+
+    .register-content-container{
+        width: 100%;
+        margin-bottom: 2em;
+        .register-fields{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 2em;
+            .example-full-width {
+                width: 80%;
+            }
+            .register-btn{
+                width: 70%;
+                background-color: var(--first-color);
+            }
+        }
+    }
+}

@@ -1,1 +1,43 @@
-<p>register works!</p>
+<div class="register-main-container">
+    <div class="heading-container">
+        <div class="heading">
+            Let the fun begin!
+        </div>
+    
+        <img class="image-for-heading" src="../../../../assets/images/1.jpg" alt="">
+    
+        <div class="heading">
+            Register and claim a offer
+        </div>
+    </div>
+
+    <div class="register-content-container">
+        <div class="register-fields">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input type="text" matInput placeholder="Enter First Name">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input type="text" matInput placeholder="Enter Last Name">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Email Id</mat-label>
+                <input type="email" matInput placeholder="Enter Email Id">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput placeholder="Enter Password">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input type="password" matInput placeholder="Enter Password">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input type="text" matInput placeholder="Enter Phone Number">
+            </mat-form-field>
+            <button class="register-btn" (click)="checkToastr()" mat-flat-button>SIGN UP</button>
+        </div>
+    </div>
+</div>

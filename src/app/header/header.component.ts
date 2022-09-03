@@ -22,6 +22,14 @@ export class HeaderComponent implements OnInit, OnDestroy {
     {
       name : 'Canvas Wall Display',
       link : '/wall-display'
+    },
+    {
+      name : 'Login',
+      link : '/login'
+    },
+    {
+      name : 'Register',
+      link : '/register'
     }
   ];
 
