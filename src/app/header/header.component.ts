@@ -9,32 +9,45 @@ import { BreakpointObserver, BreakpointState, MediaMatcher } from '@angular/cdk/
 export class HeaderComponent implements OnInit, OnDestroy {
   offerOne = 'We’re happy to have you here - claim your 5% site wide off Or free 8X8 canvas offer - ';
   offerTwo = 'UP TO 93% OFF CANVAS PRINTS + BUY 2 GET 1 FREE SITEWIDE! (CODE: B2G1) SHIPS IN 24 HRS!';
-  @ViewChild('snav') sidenav :any;
+  @ViewChild('snav') sidenav: any;
   sideNavOpen: boolean = false;
   largerScreen: boolean = false;
   mobileQuery: MediaQueryList;
   // fillerNav = Array.from({ length: 9 }, (_, i) => `Nav Item ${i + 1}`);
   fillerNav = [
     {
-      name : 'Home',
-      link : ''
+      name: 'Home',
+      link: '',
+      child: []
     },
     {
-      name : 'Canvas Wall Display',
-      link : '/wall-display'
+      name: 'Canvas Shop',
+      link: '',
+      child: [{
+        name: 'Canvas Prints',
+        link: '/canvas-prints',
+      }, {
+        name: 'Wall Display',
+        link: '/wall-display',
+      }, {
+        name: 'Photo Collage',
+        link: '/photo-collage',
+      }]
     },
     {
-      name : 'Login',
-      link : '/login'
+      name: 'Login',
+      link: '/login',
+      child: []
     },
     {
-      name : 'Register',
-      link : '/register'
+      name: 'Register',
+      link: '/register',
+      child: []
     }
   ];
 
   fillerContent = Array.from(
-    {length: 10},
+    { length: 10 },
     () =>
       `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -45,7 +58,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   private _mobileQueryListener: () => void;
 
-  constructor(private changeDetectorRef: ChangeDetectorRef, public breakPointObserver : BreakpointObserver,private media: MediaMatcher) {
+  constructor(private changeDetectorRef: ChangeDetectorRef, public breakPointObserver: BreakpointObserver, private media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -54,30 +67,30 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
   }
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     // get the viewport width
     this.breakPointObserver
-    .observe(['(max-width: 600px)'])
-    .subscribe((state:BreakpointState)=>{
-      if(state.matches){
-        this.largerScreen = false;
-        this.sidenav.close();
-      }else{
-        this.largerScreen = true;
-        this.sidenav.open();
-      }
-      this.changeDetectorRef.detectChanges();
-    });
+      .observe(['(max-width: 600px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.largerScreen = false;
+          this.sidenav.close();
+        } else {
+          this.largerScreen = true;
+          this.sidenav.open();
+        }
+        this.changeDetectorRef.detectChanges();
+      });
   }
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  toggleSideNav(){
-    if(this.largerScreen){
+  toggleSideNav() {
+    if (this.largerScreen) {
       this.sidenav.open();
-    }else{
+    } else {
       this.sidenav.close();
     }
   }

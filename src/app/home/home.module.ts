@@ -9,6 +9,8 @@ import { CartComponent } from './pages/cart/cart.component';
 import { MaterialModule } from 'src/core/material.module';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { CanvasPrintsComponent } from './pages/canvas-prints/canvas-prints.component';
+import { PhotoCollageComponent } from './pages/photo-collage/photo-collage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './pages/profile/profile.component';
@@ -20,6 +22,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     CartComponent,
     LoginComponent,
     RegisterComponent,
+    CanvasPrintsComponent,
+    PhotoCollageComponent,
     ProfileComponent,
 
   ],

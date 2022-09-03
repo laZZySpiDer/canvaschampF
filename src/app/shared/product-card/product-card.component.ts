@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProductCardData } from '../shared-component.model';
 
 @Component({
   selector: 'app-product-card',
@@ -6,12 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
-  @Input('title') title = '';
-  @Input('dimension') dimension = '';
-  @Input('strikePrice') strikePrice = '';
-  @Input('cprice') cprice = '';
-  @Input('varietyList') varietyList: string[] = [];
-  @Input('imageName') imageName = '';
+  @Input('productCardData') productCardData!: ProductCardData;
 
   constructor() {
   }

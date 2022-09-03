@@ -1,0 +1,49 @@
+<div>
+    <div class="product-details-container"
+        [ngStyle]="{'background-image': 'url(../../../assets/images/' + imageName + ')'}"></div>
+    <div class="product-details">
+        <h1 class="title-style">{{title}}</h1>
+        <span *ngFor="let count of totalStarCount">
+            <span class="star-color" *ngIf="count <= starCount; else noFillStar">
+                &bigstar;
+            </span>
+            <ng-template #noFillStar>
+                <span class="star-color">
+                    &star;
+                </span>
+            </ng-template>
+
+        </span>
+        <span class="review-style">{{rating}}</span>
+
+        <p class="product-description" *ngIf="productDescription">
+            {{productDescription}}
+        </p>
+
+        <div class="coupon-style">
+            <div><b>{{discount}}</b></div>
+            <br>
+            <div>USE COUPON CODE: <span class="star-color">{{coupon}}</span></div>
+        </div>
+        <div class="product-description-list" *ngIf="productDescriptionList">
+            <ul>
+                <li *ngFor="let desc of productDescriptionList">{{desc}}</li>
+            </ul>
+
+        </div>
+        <div *ngIf="strikePrice !== '' || cPrice !== ''" class="price-box">Starts at <span *ngIf="strikePrice !== ''"
+                class="strike">{{strikePrice}}</span> <span *ngIf="cPrice" class="cprice !==''">{{cPrice}}</span>
+            <strong *ngIf="discoutPercentage !== '' " class="discounted_percent_label">{{discoutPercentage}}</strong>
+        </div>
+        <div class="button-style">
+            <button class="btn btn-primary">START ORDER</button>
+        </div>
+        <p class="after-btn">
+            No Risk, 100% Guarantee!
+        </p>
+        <div class="ship-style">
+            Ships in 24 hours | <span class="star-color">Pricing Policy</span> | <span class="star-color">Pay
+                Later</span>
+        </div>
+    </div>
+</div>

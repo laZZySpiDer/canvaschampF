@@ -1,35 +1,9 @@
 <div class="wall-display-containter">
-    <div class="product-details-container image-styling"></div>
-    <div class="product-details">
-        <h1 class="title-style">CANVAS WALL DISPLAYS</h1>
-        <div><span class="star-color">
-                &bigstar;
-                &bigstar;
-                &bigstar;
-                &bigstar;
-                &star;
-            </span>
-            <span class="review-style">4/5 out of 124232 reviews</span>
-        </div>
-        <div class="coupon-style">
-            <div><b>82% ALREADY DISCOUNTED + ADDITIONAL 10% OFF</b></div>
-            <br>
-            <div>USE COUPON CODE: <span class="star-color">WALL10 | Ends soon</span></div>
-        </div>
-        <div class="price-box">Starts at <span class="strike">$184.56</span> <span class="cprice">$33.22</span>
-            <strong class="discounted_percent_label">82% OFF</strong>
-        </div>
-        <div class="button-style">
-            <button class="btn btn-primary">START ORDER</button>
-        </div>
-        <p class="after-btn">
-            No Risk, 100% Guarantee!
-        </p>
-        <div class="ship-style">
-            Ships in 24 hours | <span class="star-color">Pricing Policy</span> | <span class="star-color">Pay
-                Later</span>
-        </div>
-    </div>
+
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [coupon]="coupon"
+        [strikePrice]="productStrikePrice" [cPrice]="productCPrice" [discoutPercentage]="discoutPercentage"
+        [starCount]="starCount" [imageName]="imageName"></app-product-details>
 
     <!-- CHOOSE YOUR CANVAS WALL DISPLAY -->
     <div class="canvas-wall">
@@ -37,15 +11,8 @@
         <div class="after-canvas">Quality you can trust!</div>
     </div>
 
-    <div class="">
-        <app-product-card title="3 Panel Displays" imageName="1.jpg" [dimension]="dimension" [strikePrice]="strikePrice"
-        [cprice]="cprice" [varietyList]="varietyList"></app-product-card>
-        <app-product-card title="3 Panel Displays" imageName="2.jpg" [dimension]="dimension" [strikePrice]="strikePrice"
-        [cprice]="cprice" [varietyList]="varietyList"></app-product-card>
-        <app-product-card title="3 Panel Displays" imageName="4.jpg" [dimension]="dimension" [strikePrice]="strikePrice"
-        [cprice]="cprice" [varietyList]="varietyList"></app-product-card>
-        <app-product-card title="3 Panel Displays" imageName="3.jpg" [dimension]="dimension" [strikePrice]="strikePrice"
-        [cprice]="cprice" [varietyList]="varietyList"></app-product-card>
+    <div class="" *ngFor="let productData of productCardData">
+        <app-product-card [productCardData]="productData"></app-product-card>
     </div>
 
 </div>
