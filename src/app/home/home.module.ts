@@ -9,7 +9,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { MaterialModule } from 'src/core/material.module';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './pages/profile/profile.component';
 
@@ -29,7 +29,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     SwiperModule,
     SharedModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class HomeModule { }

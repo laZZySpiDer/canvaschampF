@@ -15,4 +15,11 @@ export class LoginService {
       password : password
     })
   }
+
+
+  registerUser(userDetails:any){
+    return this.http.post(`${this.mainAPI}/unsecure/register`,
+      userDetails
+    )
+  }
 }
