@@ -1,1 +1,12 @@
-<button (click)="logout()">LogOut</button>
+<div class="profile-main-container">
+    <div class="heading heading-profile">
+        Profile
+    </div>
+    <div class="user-details">
+        <div class="single-detail">Email : {{userDetails.email}}</div>
+        <div class="single-detail">First Name : {{userDetails.firstName}}</div>
+        <div class="single-detail">Last Name : {{userDetails.lastName}}</div>
+        <button class="single-detail btn"  mat-flat-button (click)="logout()">LogOut</button>
+    </div>
+</div>
+

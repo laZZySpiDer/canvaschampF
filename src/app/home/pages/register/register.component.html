@@ -12,32 +12,75 @@
     </div>
 
     <div class="register-content-container">
-        <div class="register-fields">
+        <form [formGroup]="registrationForm" class="register-fields">
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>First Name</mat-label>
-                <input type="text" matInput placeholder="Enter First Name">
+                <input formControlName="firstName" type="text" matInput placeholder="Enter First Name">
+               
+                <mat-error *ngIf="f.firstName.errors?.minlength && !f.firstName.errors?.required">
+                    First Name should be longer than 3 Words
+                </mat-error>
+                <mat-error *ngIf="f.firstName.errors?.maxlength && !f.firstName.errors?.required">
+                    First Name should not be longer than 30 Words
+                </mat-error>
+                <mat-error *ngIf="f.firstName.errors?.required">
+                    Please enter a First Name
+                </mat-error>
             </mat-form-field>
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Last Name</mat-label>
-                <input type="text" matInput placeholder="Enter Last Name">
+                <input formControlName="lastName" type="text" matInput placeholder="Enter Last Name">
+                <mat-error *ngIf="f.lastName.errors?.minlength && !f.lastName.errors?.required">
+                    Last Name should be longer than 3 Words
+                </mat-error>
+                <mat-error *ngIf="f.lastName.errors?.maxlength && !f.lastName.errors?.required">
+                    Last Name should not be longer than 30 Words
+                </mat-error>
+                <mat-error *ngIf="f.lastName.errors?.required">
+                    Please enter a Last Name
+                </mat-error>
             </mat-form-field>
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Email Id</mat-label>
-                <input type="email" matInput placeholder="Enter Email Id">
+                <input formControlName="emailId" type="email" matInput placeholder="Enter Email Id">
+                <mat-error *ngIf="f.emailId.errors?.email && !f.emailId.errors?.required">
+                   Please Enter a valid Email Id
+                </mat-error>
+                <mat-error *ngIf="f.emailId.errors?.required">
+                    Please enter a Email Id
+                </mat-error>
             </mat-form-field>
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Password</mat-label>
-                <input type="password" matInput placeholder="Enter Password">
+                <input formControlName="password" type="password" matInput placeholder="Enter Password">
+                 <mat-error *ngIf="f.password.errors?.required">
+                     Please enter a Password
+                 </mat-error>
             </mat-form-field>
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Confirm Password</mat-label>
-                <input type="password" matInput placeholder="Enter Password">
+                <input formControlName="confirmPassword" type="password" matInput placeholder="Enter Confirm Password">
+                <mat-error *ngIf="f.confirmPassword.errors?.mustMatch && !f.confirmPassword.errors?.required">
+                    Confirm Password and Password should match
+                </mat-error>
+                <mat-error *ngIf="f.confirmPassword.errors?.required">
+                    Please enter Confirm Password
+                </mat-error>
             </mat-form-field>
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Phone Number</mat-label>
-                <input type="text" matInput placeholder="Enter Phone Number">
+                <input formControlName="phoneNumber" type="text" matInput placeholder="Enter Phone Number">
+                <mat-error *ngIf="f.phoneNumber.errors?.required">
+                    Please enter Confirm Password
+                </mat-error>
             </mat-form-field>
             <button class="register-btn" (click)="checkToastr()" mat-flat-button>SIGN UP</button>
-        </div>
+        </form>
     </div>
 </div>

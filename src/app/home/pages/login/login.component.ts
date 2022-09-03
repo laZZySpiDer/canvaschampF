@@ -46,8 +46,11 @@ export class LoginComponent implements OnInit,AfterContentInit {
         }));
         this._router.navigate(['']);
       }else{
-        this.toastr.error(`Couldnt Login! Please try again`,'Login Error');
+        this.toastr.error(response.message,'Login Error');
       }
+    },
+    (error:Error)=>{
+      this.toastr.error(error.message,'Login Error');
     })
   }
 }

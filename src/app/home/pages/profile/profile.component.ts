@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoggedInUserData } from 'src/app/models/user.profile.model';
 import { ProfileService } from 'src/app/services/profile.service';
 
 @Component({
@@ -7,9 +8,14 @@ import { ProfileService } from 'src/app/services/profile.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
 })
-export class ProfileComponent implements OnInit {
-
+export class ProfileComponent implements OnInit,AfterContentInit {
+  userDetails!:LoggedInUserData;
   constructor(private profileService:ProfileService,private _router:Router) { }
+  ngAfterContentInit(): void {
+    this.profileService.getLoggedInUserDetails().subscribe((response:LoggedInUserData)=>{
+      this.userDetails = response;
+    })
+  }
 
   ngOnInit(): void {
   }
