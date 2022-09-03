@@ -3,6 +3,7 @@ import { SwiperComponent } from "swiper/angular";
 
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, Pagination } from "swiper";
+import { ProfileService } from '../services/profile.service';
 
 // install Swiper modules
 SwiperCore.use([Autoplay,Pagination]);
@@ -49,9 +50,10 @@ export class HomeComponent implements OnInit {
       icon : 'check_circle'
     },
   ]
-  constructor() { }
+  constructor(private profileService:ProfileService) { }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -9,6 +9,9 @@ import { CartComponent } from './pages/cart/cart.component';
 import { MaterialModule } from 'src/core/material.module';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +19,17 @@ import { RegisterComponent } from './pages/register/register.component';
     WallDisplayComponent,
     CartComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfileComponent,
+
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     SwiperModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

@@ -5,6 +5,14 @@
         </div>
 
         <mat-divider></mat-divider>
+
+        <div *ngIf="userLoggedIn; else notLoggedInTemplate">
+            Hello {{userDetails.firstName}} {{userDetails.lastName}} 
+            Welcome to Innovative Canvas
+        </div>
+        <ng-template #notLoggedInTemplate>
+            Please Login To Checkout
+        </ng-template>
     </div>
     <div class="cart-item-container"></div>
 </div>
