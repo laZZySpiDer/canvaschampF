@@ -35,9 +35,9 @@
                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="57">
                 <mat-nav-list>
                     <div *ngFor="let nav of fillerNav">
-                        <a *ngIf="nav.child.length === 0" mat-list-item routerLink="{{nav.link}}"
+                        <a *ngIf="nav.child?.length === 0" mat-list-item routerLink="{{nav.link}}"
                             (click)="toggleSideNav()">{{nav.name}}</a>
-                        <mat-accordion *ngIf="nav.child.length > 0" multi>
+                        <mat-accordion *ngIf="nav.child && nav.child.length > 0" multi>
                             <mat-expansion-panel>
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>
@@ -54,6 +54,10 @@
 
 
                 </mat-nav-list>
+                <!-- <mat-nav-list class="login-register-buttons">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </mat-nav-list> -->
             </mat-sidenav>
         </mat-sidenav-container>
     </div>

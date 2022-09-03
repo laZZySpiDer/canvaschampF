@@ -11,6 +11,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CanvasPrintsComponent } from './pages/canvas-prints/canvas-prints.component';
 import { PhotoCollageComponent } from './pages/photo-collage/photo-collage.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +23,18 @@ import { PhotoCollageComponent } from './pages/photo-collage/photo-collage.compo
     LoginComponent,
     RegisterComponent,
     CanvasPrintsComponent,
-    PhotoCollageComponent
+    PhotoCollageComponent,
+    ProfileComponent,
+
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     SwiperModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class HomeModule { }
