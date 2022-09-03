@@ -1,0 +1,35 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [coupon]="coupon"
+        [strikePrice]="productStrikePrice" [cPrice]="productCPrice" [discoutPercentage]="discoutPercentage"
+        [starCount]="starCount" [imageName]="imageName" [productDescription]="productDescription">
+    </app-product-details>
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">TURN YOUR PHOTOS IN TO A STUNNING CANVAS PHOTO COLLAGE</h2>
+        <div class="after-canvas">Secure your golden moments in a story-telling way!</div>
+    </div>
+    <div *ngFor="let productCard of stunningCollage">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+    <hr class="horizontal-line-style">
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">THE QUALITIES ACCOMPANYING CANVAS PHOTO COLLAGE</h2>
+        <div class="after-canvas">Check out the features of we deliver with!</div>
+    </div>
+    <div *ngFor="let productCard of qualityCollage">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">GET TO CHOOSE FROM AMAZING PHOTO COLLAGE TEMPLATES</h2>
+        <div class="after-canvas"></div>
+    </div>
+    <div *ngFor="let productCard of productCardData">
+        <app-product-card [productCardData]="productCard">
+        </app-product-card>
+    </div>
+</div>

@@ -9,6 +9,8 @@ import { CartComponent } from './pages/cart/cart.component';
 import { MaterialModule } from 'src/core/material.module';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { CanvasPrintsComponent } from './pages/canvas-prints/canvas-prints.component';
+import { PhotoCollageComponent } from './pages/photo-collage/photo-collage.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { RegisterComponent } from './pages/register/register.component';
     WallDisplayComponent,
     CartComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CanvasPrintsComponent,
+    PhotoCollageComponent
   ],
   imports: [
     CommonModule,

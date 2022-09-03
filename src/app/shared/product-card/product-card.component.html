@@ -1,18 +1,22 @@
 <section>
     <div class="card-container">
-        <img src="../../../assets/images/{{imageName}}" width="100%" height="75%">
+        <img src="../../../assets/images/{{productCardData.imageName}}" width="100%" height="75%">
     </div>
     <div class="card-product-details">
-        <h3>{{title}}</h3>
-        <div><b>{{dimension}}</b><span class="strike">{{' '+ strikePrice + ' '}}</span><span class="cprice">{{cprice}}</span></div>
-        <hr class="hz-separator">
-        <div>
+        <h3>{{productCardData.title}}</h3>
+        <div><b *ngIf="productCardData.dimension">{{productCardData.dimension}}</b><span
+                *ngIf="!productCardData.dimension">Starts at </span><span *ngIf="productCardData.strikePrice"
+                class="strike">{{' '+ productCardData.strikePrice + '
+                '}}</span><span *ngIf="productCardData.cprice" class="cprice">{{productCardData.cprice}}</span></div>
+        <hr *ngIf="productCardData.dimension" class="hz-separator">
+        <div *ngIf="productCardData.varietyList">
             <ul>
-                <li *ngFor="let value of varietyList">{{value}}</li>
+                <li *ngFor="let value of productCardData.varietyList">{{value}}</li>
             </ul>
         </div>
         <div class="button-style">
-            <button class="btn btn-primary">ORDER NOW</button>
+            <button type="submit" class="btn btn-primary">{{productCardData.buttonName ? productCardData.buttonName :
+                'ORDER NOW'}}</button>
         </div>
     </div>
 </section>

@@ -17,11 +17,22 @@ export class HeaderComponent implements OnInit, OnDestroy {
   fillerNav = [
     {
       name : 'Home',
-      link : ''
+      link : '',
+      child:[]
     },
     {
-      name : 'Canvas Wall Display',
-      link : '/wall-display'
+      name : 'Canvas Shop',
+      link : '',
+      child:[{
+        name : 'Canvas Prints',
+        link : '/canvas-prints',
+      },{
+        name : 'Wall Display',
+        link : '/wall-display',
+      },{
+        name : 'Photo Collage',
+        link : '/photo-collage',
+      }]
     }
   ];
 

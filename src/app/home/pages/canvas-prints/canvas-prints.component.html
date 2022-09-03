@@ -1,0 +1,55 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [coupon]="coupon"
+        [strikePrice]="productStrikePrice" [cPrice]="productCPrice" [discoutPercentage]="discoutPercentage"
+        [starCount]="starCount" [imageName]="imageName" [productDescriptionList]="productDescriptionList"></app-product-details>
+
+    <!-- CHOOSE YOUR CANVAS PRINTS -->
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">ENHANCE YOUR SPACE WITH CANVAS PRINTS</h2>
+        <div class="after-canvas">Your Memories on Custom Canvas Print!</div>
+    </div>
+
+    <div class="card-container">
+        <img src="../../../assets/images/4.jpg" width="100%" height="60%">
+
+        <p class="content">
+            Transform your photos into personalized wall decor for your home or office space with our museum quality
+            canvas prints. We make it easy to design your canvas and guarantee 100% satisfaction with your creation.
+        </p>
+        <p class="headline">What Kind of Photos Can be Printed on Canvas?</p>
+        <p class="content">
+            Choose high-quality photos that feature centered subjects, high resolutions, and clear backgrounds. Images
+            from your smartphone or social media are perfect for small photo canvases, while higher resolution photos
+            like those from digital cameras are perfect for larger canvas prints.
+        </p>
+        <p class="headline">Our Custom Canvas Prints Are Easy to Order</p>
+        <p class="content">If you can click a button, you can design your own photo canvas print</p>
+
+        <div class="button-style">
+            <button type="submit" class="btn btn-primary">Create A Canvas</button>
+        </div>
+    </div>
+    <hr class="horizontal-line-style">
+
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">BEST CANVAS THICKNESS OPTION</h2>
+        <div class="after-canvas"></div>
+    </div>
+    <div *ngFor="let productCard of productCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+    <hr class="horizontal-line-style">
+
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">CUSTOM CANVAS PRINTS DISPLAY OPTIONS</h2>
+        <div class="after-canvas">Living it up with a Unique Personalized Canvas Print</div>
+    </div>
+    <div *ngFor="let productCard of customCanvasProductData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+</div>
