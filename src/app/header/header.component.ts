@@ -46,7 +46,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
         link: '/hanaging-canvas',
       }, {
         name: 'Split Photo Canvas',
-        link: '/splits-photo',
+        link: '/split-photo',
       },]
     },
     {

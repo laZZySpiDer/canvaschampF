@@ -10,7 +10,7 @@ export class SplitPhotoComponent implements OnInit {
   // product details input 
   title = 'SPLIT CANVAS PRINTS';
   rating = '4.4/5 out of 16430 reviews';
-  productDescriptionList = 'Transform your wall into splendid creative display by printing your favorite pictures across multi panel split canvas prints';
+  productDescription = 'Transform your wall into splendid creative display by printing your favorite pictures across multi panel split canvas prints';
   discount = 'UP TO 10% OFF CANVAS PRINTS | PROMO APPLIED!';
   coupon = 'SPLIT10';
   productStrikePrice = '';
