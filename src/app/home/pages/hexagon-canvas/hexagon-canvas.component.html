@@ -1,0 +1,55 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [coupon]="coupon"
+        [strikePrice]="productStrikePrice" [cPrice]="productCPrice" [discoutPercentage]="discoutPercentage"
+        [starCount]="starCount" [imageName]="imageName" [productDescription]="productDescription">
+    </app-product-details>
+
+    <!-- CHOOSE YOUR CANVAS PRINTS -->
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">About Hexagon Canvas</h2>
+        <div class="after-canvas"></div>
+    </div>
+
+    <div class="card-container">
+        <img src="../../../assets/images/4.jpg" width="100%" height="60%">
+        <p class="heading">Hexagon Shaped Canvases Bring All Your Memories Together.</p>
+
+        <p class="content">
+            Hexagon-shaped canvas prints are a lovely and innovative way to display your precious memories. Connect up
+            to ten of our hexagon photo canvases using collage clips to create a design that is uniquely yours. Combine
+            hexagon canvas prints in any shape or hang them alone for a distinct design touch.
+        </p>
+        <p class="headline">Beautiful Hexagon Photo Canvas Prints from CanvasChamp</p>
+        <p class="content">
+            Our hexagon prints are displayed on high-quality canvas using the latest printing technology. Your
+            personalized hexagon shaped pre-stretched canvas will have the same bright colors and durable fabric you’ve
+            come to expect from CanvasChamp. You can also choose from two different wraps and three different borders.
+            Your friends and neighbors will be impressed with your new hexagon-shaped canvas prints!
+        </p>
+        <p class="headline">The Perfect Size Hexagon Photo Canvas - For Anywhere!</p>
+        <p class="content">Hexagon canvas prints measure 10" from corner to corner or 8 3/4" from side to side, so you
+            can hang one hexagon shaped canvas in a small area or combine several for a personalized hexagon photo
+            canvas display for larger areas. Hexagon canvas prints are as versatile as they are beautiful!</p>
+
+        <div class="button-style">
+            <button type="submit" class="btn btn-primary">Create your hexagon prints</button>
+        </div>
+    </div>
+    <hr class="horizontal-line-style">
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">HEXAGON CANVAS PRINTS</h2>
+        <div class="after-canvas">Connect Them, Arrange Them or Hang Them On Their Own!</div>
+    </div>
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">Three hexagon photo Canvases can give you different looks</h2>
+        <div class="after-canvas"></div>
+    </div>
+    <div *ngFor="let productCard of productCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+    <hr class="horizontal-line-style">
+</div>

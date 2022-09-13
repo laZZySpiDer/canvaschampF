@@ -53,8 +53,7 @@ export class WallDisplayComponent implements OnInit {
       cprice: '$33.33',
       varietyList: ['12"x18" Thin wrap (Canvas Lite)', '10"x8" Thin wrap (Canvas Lite)'],
     }
-  ]
-
+  ];
 
   constructor() { }
 

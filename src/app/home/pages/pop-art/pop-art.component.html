@@ -1,0 +1,26 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [coupon]="coupon"
+        [cPrice]="productCPrice" [starCount]="starCount" [imageName]="imageName"
+        [productDescription]="productDescription">
+    </app-product-details>
+
+    <div *ngFor="let productCard of productCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+    <hr class="horizontal-line-style">
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">VIBRANT STYLES FOR POP ART ON CANVAS</h2>
+        <div class="after-canvas"></div>
+    </div>
+    <div *ngFor="let productCard of stunningCollage">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+
+    <div class="button-style flex-center">
+        <button type="submit" class="btn btn-primary">DESIGN YOUR POP ART</button>
+    </div>
+</div>
