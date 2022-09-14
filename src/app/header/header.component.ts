@@ -32,7 +32,22 @@ export class HeaderComponent implements OnInit, OnDestroy {
       }, {
         name: 'Photo Collage',
         link: '/photo-collage',
-      }]
+      }, {
+        name: 'Pop Art Canvas',
+        link: '/pop-art-canvas',
+      }, {
+        name: 'Panaroma Photo Canvas',
+        link: '/panaroma-photo',
+      }, {
+        name: 'Hexagon Canvas',
+        link: '/hexagon-canvas',
+      }, {
+        name: 'Hanging Photo Canvas',
+        link: '/hanaging-canvas',
+      }, {
+        name: 'Split Photo Canvas',
+        link: '/split-photo',
+      },]
     },
     {
       name: 'Login',

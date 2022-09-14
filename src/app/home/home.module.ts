@@ -14,6 +14,11 @@ import { PhotoCollageComponent } from './pages/photo-collage/photo-collage.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { PopArtComponent } from './pages/pop-art/pop-art.component';
+import { SplitPhotoComponent } from './pages/split-photo/split-photo.component';
+import { PanaromaPhotoComponent } from './pages/panaroma-photo/panaroma-photo.component';
+import { HexagonCanvasComponent } from './pages/hexagon-canvas/hexagon-canvas.component';
+import { HangingCanvasComponent } from './pages/hanging-canvas/hanging-canvas.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +30,11 @@ import { ProfileComponent } from './pages/profile/profile.component';
     CanvasPrintsComponent,
     PhotoCollageComponent,
     ProfileComponent,
+    PopArtComponent,
+    SplitPhotoComponent,
+    PanaromaPhotoComponent,
+    HexagonCanvasComponent,
+    HangingCanvasComponent,
 
   ],
   imports: [

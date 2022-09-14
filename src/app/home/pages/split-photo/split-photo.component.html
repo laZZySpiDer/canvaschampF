@@ -1,0 +1,17 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [coupon]="coupon"
+        [strikePrice]="productStrikePrice" [cPrice]="productCPrice" [discoutPercentage]="discoutPercentage"
+        [starCount]="starCount" [imageName]="imageName" [productDescription]="productDescription">
+    </app-product-details>
+
+    <!-- CHOOSE YOUR CANVAS PRINTS -->
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">SPLIT CANVAS PRINTS ARRANGEMENTS</h2>
+        <div class="after-canvas">Show your walls some love. Create your own multi panel split canvas prints.</div>
+    </div>
+
+    <div class="" *ngFor="let productData of productCardData">
+        <app-product-card [productCardData]="productData"></app-product-card>
+    </div>
+</div>

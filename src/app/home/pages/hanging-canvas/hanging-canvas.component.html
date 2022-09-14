@@ -1,0 +1,33 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount"
+        [strikePrice]="productStrikePrice" [cPrice]="productCPrice" [discoutPercentage]="discoutPercentage"
+        [starCount]="starCount" [imageName]="imageName" [productDescription]="productDescription">
+    </app-product-details>
+
+    <!-- CHOOSE YOUR CANVAS PRINTS -->
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">Hanging Your Canvas Wall Art</h2>
+        <div class="after-canvas">There’s no one answer to “how to hang canvas art” – your imagination is your only limit</div>
+    </div>
+    <div *ngFor="let productCard of productCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+    <hr class="horizontal-line-style">
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">IT’S EASY!</h2>
+        <div class="after-canvas">Creating hanging wall art from your photos is as simple as the art itself.</div>
+    </div>
+    <div *ngFor="let productCard of customCanvasProductData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+
+    <div class="button-style flex-center">
+        <button type="submit" class="btn btn-primary">DESIGN YOUR POP ART</button>
+    </div>
+    <hr class="horizontal-line-style">
+</div>
