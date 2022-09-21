@@ -14,7 +14,6 @@ export class CanvasPrintsComponent implements OnInit {
   coupon = 'Buy 2 Get 1 Free CODE: B2G1';
   productStrikePrice = '';
   productCPrice = '$4.20';
-  discoutPercentage = '82% OFF';
   starCount = 4.7;
   imageName = '2.jpg';
   productDescriptionList = ['Museum Quality Canvas Prints',

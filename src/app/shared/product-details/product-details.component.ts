@@ -19,10 +19,23 @@ export class ProductDetailsComponent implements OnInit {
   @Input('productDescriptionList') productDescriptionList!: string[];
 
   totalStarCount = [1, 2, 3, 4, 5];
+  calculatedDiscountPercent = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.calculateDiscountPercentage();
+
+  }
+
+  calculateDiscountPercentage(){
+    if(this.strikePrice !== '' && this.cPrice !== ''){
+      const sPrice = +this.strikePrice.substring(1);
+      const cPrice = +this.cPrice.substring(1);
+
+      const discoutPercentage = ((sPrice - cPrice)*100)/sPrice;
+      this.calculatedDiscountPercent = Math.round(discoutPercentage);
+    }
   }
 
 }

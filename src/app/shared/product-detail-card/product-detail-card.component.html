@@ -1,6 +1,9 @@
 <section>
-    <div class="card-container">
+    <div *ngIf="imageExtension === 'jpg'" class="image-container-jpg">
         <img src="../../../assets/images/{{productDetailCardData.imageName}}" width="100%" height="75%">
+    </div>
+    <div *ngIf="imageExtension === 'png'" class="image-container-png">
+        <img src="../../../assets/images/{{productDetailCardData.imageName}}">
     </div>
     <div class="card-product-details" [ngStyle]="{'text-align': productDetailCardData.alignment}">
         <h3 class="heading" *ngIf="productDetailCardData.alignment === 'left'">{{productDetailCardData.title}}</h3>

@@ -33,7 +33,7 @@
         </div>
         <div *ngIf="strikePrice !== '' || cPrice !== ''" class="price-box">Starts at <span *ngIf="strikePrice !== ''"
                 class="strike">{{strikePrice}}</span> <span *ngIf="cPrice" class="cprice !==''">{{cPrice}}</span>
-            <strong *ngIf="discoutPercentage !== '' " class="discounted_percent_label">{{discoutPercentage}}</strong>
+            <strong *ngIf="calculatedDiscountPercent > 0" class="discounted_percent_label">{{calculatedDiscountPercent + '%OFF'}}</strong>
         </div>
         <div class="button-style">
             <button class="btn btn-primary">START ORDER</button>

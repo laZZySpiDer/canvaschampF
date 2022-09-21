@@ -19,6 +19,15 @@ import { SplitPhotoComponent } from './pages/split-photo/split-photo.component';
 import { PanaromaPhotoComponent } from './pages/panaroma-photo/panaroma-photo.component';
 import { HexagonCanvasComponent } from './pages/hexagon-canvas/hexagon-canvas.component';
 import { HangingCanvasComponent } from './pages/hanging-canvas/hanging-canvas.component';
+import { AcrylicPrintsComponent } from './pages/home-decore-pages/acrylic-prints/acrylic-prints.component';
+import { MetalPrintsComponent } from './pages/home-decore-pages/metal-prints/metal-prints.component';
+import { WoodPrintsComponent } from './pages/home-decore-pages/wood-prints/wood-prints.component';
+import { FramePrintsComponent } from './pages/home-decore-pages/frame-prints/frame-prints.component';
+import { PhotoPillowComponent } from './pages/photo-gifts-pages/photo-pillow/photo-pillow.component';
+import { PhotoMugComponent } from './pages/photo-gifts-pages/photo-mug/photo-mug.component';
+import { PhotoCoasterComponent } from './pages/photo-gifts-pages/photo-coaster/photo-coaster.component';
+import { PeelStickPrintsComponent } from './pages/photo-gifts-pages/peel-stick-prints/peel-stick-prints.component';
+import { PosterPrintsComponent } from './pages/photo-gifts-pages/poster-prints/poster-prints.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +44,15 @@ import { HangingCanvasComponent } from './pages/hanging-canvas/hanging-canvas.co
     PanaromaPhotoComponent,
     HexagonCanvasComponent,
     HangingCanvasComponent,
+    AcrylicPrintsComponent,
+    MetalPrintsComponent,
+    WoodPrintsComponent,
+    FramePrintsComponent,
+    PhotoPillowComponent,
+    PhotoMugComponent,
+    PhotoCoasterComponent,
+    PeelStickPrintsComponent,
+    PosterPrintsComponent,
 
   ],
   imports: [

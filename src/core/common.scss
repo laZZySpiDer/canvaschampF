@@ -1,39 +1,15 @@
-section {
-  margin: 30px;
-  .image-container-jpg {
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  }
-  .image-container-png {
-    text-align: center;
-  }
+.text-center{
+  text-align: center;
+}
 
-  .card-product-details {
-    h3 {
-      font-size: 16px;
-      font-weight: bold;
-      font-family: CircularStd_Black, Helvetica, Arial, sans-serif;
-      margin-bottom: 5px;
-    }
-    .heading::after {
-      width: 50px;
-      clear: both;
-      content: "";
-      background: #e5e5e5;
-      height: 1px;
-      display: block;
-      margin: 6px 0;
-    }
-
-    .description {
-      letter-spacing: 0.2px;
-      color: #666;
-      font-size: 12px;
-    }
-  }
-
-  .button-style {
-    margin-top: 10px 10px;
-    text-transform: uppercase;
+.button-style {
+    margin: 10px 0px;
     .btn {
       display: inline-block;
       margin-bottom: 0;
@@ -63,4 +39,3 @@ section {
       padding: 8px 10px;
     }
   }
-}
