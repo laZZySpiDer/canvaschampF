@@ -1,0 +1,59 @@
+.canvas-displays-containter {
+    font-family: robotoblack, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
+    .canvas-wall {
+      padding: 0 15px;
+      margin-top: 25px;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 0.2px;
+      color: #666;
+    }
+    .after-canvas::after {
+      width: 240px;
+      clear: both;
+      content: "";
+      background: #e5e5e5;
+      height: 1px;
+      display: block;
+      margin: 20px 50px;
+    }
+    // .heading-canvas::after {
+    //   background: #e5e5e5;
+    //   content: "";
+    //   left: 0;
+    //   // position: absolute;
+    //   right: 0;
+    //   margin: 0 auto;
+    //   border-radius: 100%;
+    //   bottom: -4px;
+    //   height: 10px;
+    //   width: 10px;
+    // }
+    .heading-canvas {
+      margin-bottom: 5px;
+      color: black;
+    }
+  
+    .card-container {
+      margin: 0px 20px;
+    }
+  
+    .headline {
+      letter-spacing: 0.2px;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .content {
+      letter-spacing: 0.2px;
+      color: #666;
+      font-size: 12px;
+    }
+  
+    .horizontal-line-style {
+      margin: 20px 20px;
+      color: #666;
+    }
+  }
+  

@@ -9,9 +9,13 @@ import { ProductCardData, ProductDetailCardData } from '../shared-component.mode
 export class ProductDetailCardComponent implements OnInit {
   @Input('productDetailCardData') productDetailCardData!: ProductDetailCardData;
 
+  imageExtension = 'jpg';
+
   constructor() { }
 
   ngOnInit(): void {
+    const imageNameArray = this.productDetailCardData.imageName.split('.');
+    this.imageExtension = imageNameArray[imageNameArray.length - 1];
   }
 
 }

@@ -1,0 +1,72 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [coupon]="coupon"
+        [strikePrice]="productStrikePrice" [cPrice]="productCPrice" [discoutPercentage]="discoutPercentage"
+        [starCount]="starCount" [imageName]="imageName"></app-product-details>
+
+    <!-- CHOOSE YOUR CANVAS PRINTS -->
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">ACRYLIC PRINTS, LET THE GOOD TIMES LOOK THE BEST!</h2>
+        <div class="after-canvas">Turn your Photos into Beautiful Acrylic Prints</div>
+    </div>
+
+    <div class="card-container">
+
+        <p class="headline">Make Modern Art with Acrylic Prints</p>
+        <p class="content">Do you want to give your print that wow factor that will add a 3-D effect to your image? Are
+            you ready to amaze everybody with the high-resolution color printing that is unique to acrylic paints? Then
+            what are you waiting for? Opt for our quality services and enjoy spectacular acrylic photo prints results!
+        </p>
+        <p class="headline">Attention in the Details!</p>
+        <p class="content">The adage, "the devil is in the details" rings true when you see a spectacular acrylic
+            prints. We offer the highest quality print results with immaculate attention to detail, ensuring that every
+            image comes with a spectacular print to wow viewers!</p>
+        <p class="content">We take your artwork and imprint it as a mirror image directly on the back of a plexiglass
+            sheet. High concentration UV inks are used, and we make sure that the print is at a 1400 DPI for
+            high-resolution color printing. The acrylic printing is then processed with a white coating to give it a
+            canvas effect and to preserve it for a long time.</p>
+
+        <p class="headline">Go for the WOW Factor!</p>
+        <p class="content">Do you want to impress everyone with your great images? Want the prints to do full justice to
+            your photography talent? Do you want the spectacular effect to simply amaze anyone and everyone with the
+            print results? Then acrylic photo printing is definitely what you need to make a long-lasting and striking
+            effect!</p>
+
+        <p class="headline">Endless Possibilities</p>
+        <p class="content">Acrylic prints offer the chance to explore the unlimited possibilities and utilize your
+            creativity to enjoy spectacular image print results which are sure to be the talk of your friend and family
+            circle. Add color to a boring room or office lobby with a high-resolution acrylic print!</p>
+        <p class="content">An acrylic prints symbolizes the modern take on artwork, and you can experiment with it all
+            you want! We offer standard print size that reaches up to 55” x 55” and can also accommodate any custom
+            requirements you might have for the acrylic print of your choice!</p>
+    </div>
+    <hr class="horizontal-line-style">
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">OUR HARDWARE OPTIONS FOR A STUNNING DISPLAY</h2>
+        <div class="after-canvas">What we offer you in acrylic prints includes:</div>
+    </div>
+
+    <div *ngFor="let productCard of productCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+
+    <div class="button-style flex-center">
+        <button type="submit" class="btn btn-primary">START ORDER</button>
+    </div>
+    <hr class="horizontal-line-style">
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">KICK IT WITH OUR EASY ORDERING PROCESS!</h2>
+        <div class="after-canvas">With our simple and fast four-step process, ordering a photo printed on acrylic is a
+            breeze.</div>
+    </div>
+
+    <div *ngFor="let productCard of orderProcessCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+    <hr class="horizontal-line-style">
+
+</div>

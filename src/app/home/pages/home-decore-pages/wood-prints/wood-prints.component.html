@@ -1,0 +1,45 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [strikePrice]="productStrikePrice"
+        [cPrice]="productCPrice" [starCount]="starCount" [imageName]="imageName"
+        [productDescription]="productDescription"></app-product-details>
+
+    <!-- CHOOSE YOUR CANVAS PRINTS -->
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">PRINT ON WOOD AND PRESERVE THE MEMORIES FOREVER!</h2>
+        <div class="after-canvas">Have A Perfect Memory That Is Seared In Your Mind? Now You Can Share It With Your
+            Loved Ones.</div>
+    </div>
+
+
+    <div class="card-container text-center">
+        <p class="headline">Custom Wood Prints In Your Favourite Size And Format</p>
+        <p class="content">Wood Prints are available in six trendy sizes. Your favorite picture is printed directly on
+            premium wood and it gives your photo a very unique appearance. Custom Wood Prints printed on 12mm thick
+            quality wood. Each Wood Print Wrap is finished with a protective laminate and you can dirt free with a dry
+            napkin.
+        </p>
+    </div>
+
+    <div *ngFor="let productCard of productCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">Happy Memories Are the Best Thing in Life</h2>
+        <div class="after-canvas">When it comes to personalized wood prints, we want to give more options to our
+            customers, which is why we offer different shapes and variety. You have the flexibility of choosing from
+        </div>
+    </div>
+
+    <div *ngFor="let productCard of pieceCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+
+    <div class="button-style flex-center">
+        <button type="submit" class="btn btn-primary">CREATE WOOD PRINTS</button>
+    </div>
+    <hr class="horizontal-line-style">
+</div>

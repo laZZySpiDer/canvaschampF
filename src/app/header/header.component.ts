@@ -50,6 +50,43 @@ export class HeaderComponent implements OnInit, OnDestroy {
       },]
     },
     {
+      name: 'Home Decor',
+      link: '',
+      child: [{
+        name: 'Acrylic Prints',
+        link: '/acrylic-prints',
+      }, {
+        name: 'Metal Prints',
+        link: '/metal-prints',
+      }, {
+        name: 'Wood Prints',
+        link: '/wood-prints',
+      }, {
+        name: 'Framed Prints',
+        link: '/framed-prints',
+      }]
+    },
+    {
+      name: 'Photo Gifts',
+      link: '',
+      child: [{
+        name: 'Photo Pillow',
+        link: '/photo-pillow',
+      }, {
+        name: 'Photo Mug',
+        link: '/photo-mug',
+      }, {
+        name: 'Photo Coaster',
+        link: '/photo-coaster',
+      }, {
+        name: 'Peel n Stick Prints',
+        link: '/peel-stick-prints',
+      }, {
+        name: 'Poster Prints',
+        link: '/poster-prints',
+      }]
+    },
+    {
       name: 'Login',
       link: '/login',
       child: []

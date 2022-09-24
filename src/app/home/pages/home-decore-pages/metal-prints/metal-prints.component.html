@@ -1,0 +1,84 @@
+<div class="canvas-displays-containter">
+    <!-- Product detail component to show the product details -->
+    <app-product-details [title]="title" [rating]="rating" [discount]="discount" [coupon]="coupon"
+        [strikePrice]="productStrikePrice" [cPrice]="productCPrice" [discoutPercentage]="discoutPercentage"
+        [starCount]="starCount" [imageName]="imageName" [productDescription]="productDescription"></app-product-details>
+
+    <!-- CHOOSE YOUR CANVAS PRINTS -->
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">OUR METAL PRINTS OFFER FANTASTIC QUALITIES</h2>
+        <div class="after-canvas">Print your best photos and showcase vivid colors on metal prints</div>
+    </div>
+
+    <div class="card-container">
+
+        <p class="content">Make a lasting impression when you order prints on aluminum. Create a display that is better
+            than the original photo. Our process begins with our white matte aluminum and is made to show true, rich,
+            vibrant colors. Our metal printing process gives your photos more depth, sharper contrast, and deeper color
+            saturation than traditional photo printing.
+        </p>
+    </div>
+    <hr class="horizontal-line-style">
+    <div *ngFor="let productCard of productCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+
+    <div class="button-style flex-center">
+        <button type="submit" class="btn btn-primary">CREATE YOUR METAL PRINTS</button>
+    </div>
+    <hr class="horizontal-line-style">
+
+
+    <div class="card-container">
+        <img src="../../../assets/images/4.jpg" width="100%" height="60%">
+
+        <p class="headline">Reasons to Choose Metal Print Photos</p>
+        <p class="content">We can think of a few!</p>
+
+        <ul class="content">
+            <li *ngFor="let point of reasonList">{{point}}</li>
+        </ul>
+        <div class="button-style">
+            <button type="submit" class="btn btn-primary">CREATE YOURS TODAY</button>
+        </div>
+    </div>
+    <hr class="horizontal-line-style">
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">TOUGH FRAMES FOR A SOLID LOOK</h2>
+        <div class="after-canvas">Metal prints capture everyone's attention with their striking color saturation,
+            sharper contrast, and amazing depth. Choose a frameless option for a modern setting, or choose one of our
+            quality frames to match your personal decor. We offer a wide variety of hanging and framing options for you
+            to enjoy the fun of adding stylish artwork to your rooms.</div>
+    </div>
+
+    <div class="card-container">
+        <p class="headline">Ready to display your photos printed on metal</p>
+    </div>
+
+    <div *ngFor="let productCard of frameCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+
+    <div class="button-style flex-center">
+        <button type="submit" class="btn btn-primary">START ORDER</button>
+    </div>
+    <hr class="horizontal-line-style">
+
+    <div class="canvas-wall">
+        <h2 class="heading-canvas">FILTER EFFECTS TO TRY ON OUR METAL PRINTS</h2>
+        <div class="after-canvas">Okay, you’re ready for the next step and want to customize your images. We offer three
+            photo color effects: original, sepia and gray scale. We use the latest technology and guarantee your photos
+            will not only be rich in color but will last a lifetime. If you are not sure what effect you’d like on your
+            metal photos, compare the samples below.</div>
+    </div>
+
+    <div *ngFor="let productCard of filterCardData">
+        <app-product-detail-card [productDetailCardData]="productCard">
+        </app-product-detail-card>
+    </div>
+    <hr class="horizontal-line-style">
+
+</div>
