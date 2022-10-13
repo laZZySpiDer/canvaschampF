@@ -1,0 +1,106 @@
+.upload-list {
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    li {
+      width: 20%;
+      .select-products {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        border-left: 1px solid #cccccc;
+        border-top: #f2f2f2 1px solid;
+        border-bottom: #cccccc 1px solid;
+        clear: none;
+        i {
+          text-align: center;
+          padding: 5px 0px 5px 0px;
+        }
+        span {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 9px;
+          padding: 0px 0px 5px 0px;
+        }
+      }
+    }
+  }
+
+  .upload-view {
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    .upload-title {
+      font-size: 12px;
+      padding-bottom: 10px;
+    }
+
+    .upload-image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .upload-button{
+
+      }
+      .upload-top {
+        width: 200px;
+        height: 20px;
+        background-color: white;
+        border-top: #cccccc 1px solid;
+      }
+      .upload-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 240px;
+        height: 150px;
+        background-color: white;
+        border-top: #cccccc 1px solid;
+        .upload-mid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 150px;
+          background-color: white;
+          border: #cccccc 1px solid;
+          .upload-icon-text{
+            color: #bf1e2e;
+            padding-bottom: 5px;
+            i{
+                padding-right: 3px;
+                font-size: 20px;
+            }
+            span{
+                font-size: 12px;
+            }
+          }
+          .upload-limit{
+            font-size: 11px;
+          }
+        }
+      }
+      .upload-bottom {
+        width: 200px;
+        height: 20px;
+        background-color: white;
+        border-top: #cccccc 1px solid;
+      }
+    }
+  }
+
+  .add-cart {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

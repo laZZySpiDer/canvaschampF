@@ -28,6 +28,7 @@ import { PhotoMugComponent } from './pages/photo-gifts-pages/photo-mug/photo-mug
 import { PhotoCoasterComponent } from './pages/photo-gifts-pages/photo-coaster/photo-coaster.component';
 import { PeelStickPrintsComponent } from './pages/photo-gifts-pages/peel-stick-prints/peel-stick-prints.component';
 import { PosterPrintsComponent } from './pages/photo-gifts-pages/poster-prints/poster-prints.component';
+import { UploadChoiceComponent } from './pages/upload-choice/upload-choice.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { PosterPrintsComponent } from './pages/photo-gifts-pages/poster-prints/p
     PhotoCoasterComponent,
     PeelStickPrintsComponent,
     PosterPrintsComponent,
+    UploadChoiceComponent,
 
   ],
   imports: [

@@ -1,0 +1,96 @@
+<div class="upload-list">
+    <ul>
+        <li (click)="onTabChangeClick('products')">
+            <div class="select-products">
+                <i class="fa fa-image"></i>
+                <span>Products</span>
+            </div>
+        </li>
+        <li (click)="onTabChangeClick('upload')">
+            <div class="select-products">
+                <i class="fa fa-upload"></i>
+                <span>Upload</span>
+            </div>
+        </li>
+        <li (click)="onTabChangeClick('select-size')">
+            <div class="select-products">
+                <i class="fa fa-object-group"></i>
+                <span>Select Size</span>
+            </div>
+        </li>
+        <li (click)="onTabChangeClick('wrap')">
+            <div class="select-products">
+                <i class="fa fa-envelope"></i>
+                <span>Wrap</span>
+            </div>
+        </li>
+        <li (click)="onTabChangeClick('hardware')">
+            <div class="select-products">
+                <i class="fa fa-tv"></i>
+                <span>Hardware</span>
+            </div>
+        </li>
+        <li (click)="onTabChangeClick('options')">
+            <div class="select-products">
+                <i class="fa fa-cog"></i>
+                <span>Options</span>
+            </div>
+        </li>
+    </ul>
+
+    <div class="" [ngSwitch]="selectedTab">
+        <div class="" *ngSwitchCase="'products'">
+            hey!!!Therer
+        </div>
+
+        <div class="upload-view" *ngSwitchCase="'upload'">
+            <div class="upload-title">{{'Selected Size ' + selectedSize}}</div>
+            <div class="upload-image-container" (click)="onUploadClick()" *ngIf="!file">
+                <div class="upload-top"></div>
+                <div class="upload-image">
+                    <div class="upload-mid">
+                        <div class="upload-icon-text flex-center">
+                            <i class="fa fa-upload"></i>
+                            <span>Upload an Image</span>
+                        </div>
+                        <div class="upload-limit">Maximum upload size: 25MB per file</div>
+                    </div>
+                </div>
+                <div class="upload-bottom"></div>
+            </div>
+
+                <div class="upload-image-container">
+                    <canvas class="upload-top"></canvas>
+                    <div class="upload-image">
+                        <canvas class="upload-mid" id="myCanvas">
+                        </canvas>
+                    </div>
+                    <canvas class="upload-bottom"></canvas>
+                </div>
+            <div class="flex-center">
+                <div class="add-cart button-style">
+                    <button class="btn btn-primary">ADD TO CART</button>
+                </div>
+                <div class="add-cart button-style">
+                    <button class="btn btn-secondary">RESET</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="" *ngSwitchCase="'select-size'">
+            hey!!!Therer
+        </div>
+
+        <div class="" *ngSwitchCase="'wrap'">
+            hey!!!Therer
+        </div>
+
+        <div class="" *ngSwitchCase="'hardware'">
+            hey!!!Therer
+        </div>
+
+        <div class="" *ngSwitchCase="'options'">
+            hey!!!Therer
+        </div>
+    </div>
+</div>
