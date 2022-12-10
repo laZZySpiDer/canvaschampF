@@ -20,6 +20,7 @@ import { PopArtComponent } from './pages/pop-art/pop-art.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { SplitPhotoComponent } from './pages/split-photo/split-photo.component';
+import { UploadChoiceComponent } from './pages/upload-choice/upload-choice.component';
 import { WallDisplayComponent } from './pages/wall-display/wall-display.component';
 
 const routes: Routes = [
@@ -44,8 +45,8 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'profile', component: ProfileComponent }
-
+  { path: 'profile', component: ProfileComponent },
+  { path: 'upload-choice', component: UploadChoiceComponent }
 ];
 
 @NgModule({
